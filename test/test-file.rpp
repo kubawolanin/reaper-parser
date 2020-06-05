@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.10/x64" 1591357329
+<REAPER_PROJECT 0.1 "6.10/x64" 1591358014
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,7 +14,7 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0
+  CURSOR 2
   ZOOM 100 0 0
   VZOOMEX 6 0
   USE_REC_CFG 0
@@ -109,7 +109,7 @@
     MAINSEND 1 0
     <FXCHAIN
       WNDRECT 619 334 793 484
-      SHOW 1
+      SHOW 0
       LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
@@ -131,7 +131,7 @@
       FADEIN 1 0 0 1 0 0
       FADEOUT 1 0 0 1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {6F0996D5-6B1C-44C0-B208-8F790AE7440C}
       IID 1
       NAME "Test untitled MIDI item"
@@ -148,17 +148,17 @@
         E 960 80 3c 00
         E 0 90 3e 60
         E 960 80 3e 00
-        E 0 90 40 60
-        E 899 80 40 00
-        e 61 90 43 60
-        e 480 80 43 00
+        e 0 90 40 60
+        e 899 80 40 00
+        E 61 90 43 60
+        E 480 80 43 00
         E 480 b0 7b 00
         CHASE_CC_TAKEOFFS 1
         GUID {F0339BE6-A15E-4232-B863-E0EF29251A87}
         IGNTEMPO 0 120 4 4
         SRCCOLOR 1221
         VELLANE 64 100 0
-        CFGEDITVIEW -315.472109 0.29674 45 12 0 -1 0 0 0 0.5
+        CFGEDITVIEW -295.221473 0.134082 45 12 0 -1 0 0 0 0.5
         KEYSNAP 0
         TRACKSEL 412
         EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
