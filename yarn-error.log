@@ -1,0 +1,57 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\kubaw\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python37\Scripts;C:\Python37;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\tools\php73;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs;C:\Program Files (x86)\GNU\GnuPG\pub;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3\bin;C:\Python3\Scripts;C:\Python3;C:\Users\kubaw\AppData\Local\Microsoft\WindowsApps;C:\Users\kubaw\AppData\Local\Yarn\bin;C:\Users\kubaw\AppData\Roaming\npm;C:\Program Files (x86)\Nmap
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  13.7.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+
+npm manifest: 
+  {
+    "name": "reaper-parser",
+    "version": "0.0.1",
+    "description": "Parse *.rpp files",
+    "main": "index.js",
+    "scripts": {
+      "start": "node --harmony index",
+      "clean": "rimraf posts/*",
+      "test": "yarn lint && tape test/*-spec.js | tap-dot",
+      "coverage": "nyc --reporter=lcov --reporter=text-summary tape test/*-spec.js nolarge",
+      "lint": "eslint .",
+      "prettier:write": "prettier --write .",
+      "prettier:check": "prettier --check ."
+    },
+    "keywords": [
+      "reaper",
+      "daw",
+      "parser"
+    ],
+    "author": "Kuba Wolanin <hi@kubawolanin.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "eslint": "^6.8.0",
+      "eslint-config-prettier": "^6.11.0",
+      "mkdirp": "^1.0.4",
+      "nyc": "^15.0.1",
+      "rimraf": "^3.0.2",
+      "tap-dot": "^2.0.0",
+      "tape": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

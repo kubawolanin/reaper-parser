@@ -1,0 +1,9 @@
+{
+  "outputDir": "./posts",
+  "slugTitle": true,
+  "outputExt": "mdx",
+  "includeNotesWithTags": [
+    "smarthome"
+  ],
+  "excludeNotesWithTags": []
+}
