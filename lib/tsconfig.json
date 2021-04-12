@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "target": "es2017",
+      "module": "commonjs",
+      "lib": ["es2017", "dom"],
+      "declaration": true,
+      "outDir": "../build",
+      "rootDir": ".",
+      "composite": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "esModuleInterop": false,
+      "inlineSourceMap": true,
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true
+    }
+}

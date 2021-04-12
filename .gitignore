@@ -1,6 +1,6 @@
 *.rpp-bak
 
-./*.rpp
+*.rpp
 
 node_modules
 
@@ -9,3 +9,7 @@ coverage/*
 .nyc_output/*
 
 .env
+
+.vscode/*
+lib/_source/*
+build

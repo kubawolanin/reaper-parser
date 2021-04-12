@@ -1,0 +1,89 @@
+import { expect } from "chai";
+import { RChunk } from "./RChunk";
+import { RNode } from "./RNode";
+import { RToken } from "./RToken";
+describe("RChunk", () => {
+  it("findFirstNodeByName", () => {
+    const chunk = new RChunk();
+    const firstNodeByName = chunk.findFirstNodeByName();
+    expect(firstNodeByName).to.equal("");
+  });
+  it("findFirstChunkByName", () => {
+    const chunk = new RChunk();
+    const firstChunkByName = chunk.findFirstChunkByName();
+    expect(firstChunkByName).to.equal("");
+  });
+  it("findAllNodesByFilter", () => {
+    const chunk = new RChunk();
+    const allNodesByFilter = chunk.findAllNodesByFilter();
+    expect(allNodesByFilter).to.equal("");
+  });
+  it("findAllChunksByFilter", () => {
+    const chunk = new RChunk();
+    const allChunksByFilter = chunk.findAllChunksByFilter();
+    expect(allChunksByFilter).to.equal("");
+  });
+  it("findAllNodesByName", () => {
+    const chunk = new RChunk();
+    const allNodesByName = chunk.findAllNodesByName();
+    expect(allNodesByName).to.equal("");
+  });
+  it("findAllChunksByName", () => {
+    const chunk = new RChunk();
+    const allChunksByName = chunk.findAllChunksByName();
+    expect(allChunksByName).to.equal("");
+  });
+  it("indexOf", () => {
+    const childNode = new RNode();
+    const chunk = new RChunk(undefined, undefined, undefined, [childNode]);
+    const indexOf = chunk.indexOf(childNode);
+    expect(indexOf).to.equal("");
+  });
+  it("getTextNotes", () => {
+    const chunk = new RChunk();
+    const textNotes = chunk.getTextNotes();
+    expect(textNotes).to.equal("");
+  });
+  it("setTextNotes", () => {
+    const chunk = new RChunk();
+    const textNotes = chunk.setTextNotes("TEST\nTEST\nTEST");
+    expect(textNotes).to.equal("");
+  });
+  it("addNode", () => {
+    const arr = [
+      "<TRACK {F06B0DA2-3D91-48FD-A7EC-618D5AFAF84D}",
+      '  NAME "Test 1"',
+      "  PEAKCOL 16576",
+      "  BEAT -1",
+      ">",
+    ];
+    const nodeTokens = arr.map((line) => new RToken(line));
+    const node = new RNode(nodeTokens, undefined);
+
+    const chunk = new RChunk();
+    const addNode = chunk.addNode(node);
+    expect(addNode).to.equal("");
+  });
+  it("removeNode", () => {
+    const chunk = new RChunk();
+    const removeNode = chunk.removeNode();
+    expect(removeNode).to.equal("");
+  });
+  it("stripGUID", () => {
+    const arr = [
+      "<TRACK {F06B0DA2-3D91-48FD-A7EC-618D5AFAF84D}",
+      '  NAME "Test 1"',
+      "  PEAKCOL 16576",
+      "  BEAT -1",
+      ">",
+    ];
+    const chunk = new RChunk();
+    const stripGUID = chunk.stripGUID();
+    expect(stripGUID).to.equal("");
+  });
+  it("copy", () => {
+    const chunk = new RChunk();
+    const copy = chunk.copy();
+    expect(copy).to.equal("");
+  });
+});

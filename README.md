@@ -1,8 +1,13 @@
 # Reaper Parser
 
 This project is in a PoC state.
+Parser of RPP files for JavaScript.
+Based on great work of mrlimbic, X-Raym and acendan from ![ReaTeam/ReaScripts](https://github.com/ReaTeam/ReaScripts)
 
-Parser of RPP files based on Nearley written in JS.
+## Features
+
+1. Reading RPP files
+1. Writing to RPP files
 
 ## TODO
 
