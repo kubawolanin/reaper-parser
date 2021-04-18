@@ -31,13 +31,12 @@ export const find = (
   var pos_end = pos_start + results[0].length - 1;
   var res = [pos_start + 1, pos_end + 1];
   for (var i = 1; i < results.length; ++i) {
-    debugger;
     res.push(Number(results[i]));
   }
   return res;
 };
 
-export const gsub = (s: string, pattern: string, repl: string, n?: number) => {
+export const gsub = (s: string, pattern: string, repl?: string, n?: number) => {
   // TODO: finish implementation, this is just a rough estimate
   // very basic version to find literal pattern hits without regexp, and simple regexp
   // TODO: n ~= nil not yet implemented
@@ -49,6 +48,10 @@ export const gsub = (s: string, pattern: string, repl: string, n?: number) => {
   pattern = translatePattern(pattern);
   pattern = pattern.replace(/\//g, "\\/"); // escape / before eval
   pattern = eval("/" + pattern + "/g"); // construct "real" regexp object so . works and we replace all not just the 1st
+
+  if (!repl) {
+    repl = "";
+  }
 
   // References the submatched substrings inside parenthesized expressions
   repl = repl.replace(/%1/g, "\\$1");

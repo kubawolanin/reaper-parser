@@ -22,6 +22,10 @@ export class RNode {
     if (parent) {
       parent.addNode(this);
     }
+
+    if (line) {
+      this.getTokens();
+    }
   }
 
   getTokens() {
@@ -44,7 +48,7 @@ export class RNode {
 
   getName() {
     // Get first token of line
-    let token = this.getToken(0);
+    const token = this.getToken(0);
     return token.getString();
   }
 

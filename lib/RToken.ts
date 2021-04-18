@@ -40,8 +40,8 @@ export class RToken {
   }
 
   toSafeString(s: string) {
-    // check param contains no quotes
-    // if needs quotes { surround with correct quotes
+    // check if param contains no quotes
+    // if it needs quotes then surround with correct quotes
     // NOTE: if quotes are present but not needed, they will be deleted - why? Reaper surrounds with different type of quote in that instance i.e "MyQuoted" -> '"MyQuoted"'
     // i.e. You may name your track "Scary" Noise -> '"Scary" Noise' // it's weird but reaper does it - check in an RPP - You can use quotes in names - if a certain quote is present it uses an extra quote that isn't present
     if (!s || s.length === 0) {
